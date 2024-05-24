@@ -9,12 +9,11 @@ import (
 
 func main() {
 	rand.Seed(time.Now().UnixNano())
-	data := make([]int, 100, 100)
+	data := make([]int, 100)
 	for i := 0; i < 100; i++ {
 		data[i] = rand.Intn(100)
 	}
 
-	//data = []int{6, 4, 3, 7, 8, 5, 2, 1}
 	ret := SelectionSort(data)
 	fmt.Print(ret)
 }
